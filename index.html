@@ -88,6 +88,7 @@
     <li><button onclick="setYear('2007')">2007</button></li>
     <li style="font-size:16px"><strong>This chart is interactive!</strong> Click and drag any node to reposition, and hover over a node to see its value.</li>
     </ul>
+    <p style="font-size:15px">For best performance, please use Chrome or Firefox as your browser.</p>
     <br>
 </div>
 
@@ -106,7 +107,7 @@
 <script src="sankey.js"></script>
 <script>
 
-var margin = {top:50, right: 10, bottom: 10, left: 10},
+var margin = {top:70, right: 10, bottom: 10, left: 10},
     width = 500,
     height = 900;
 
@@ -128,7 +129,7 @@ var svg2 = d3.select("#charts").append("svg")
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", 
-          "translate(10,50)");
+          "translate(10,70)");
 
 // Set the sankey diagram properties
 var sankey = d3.sankey()
